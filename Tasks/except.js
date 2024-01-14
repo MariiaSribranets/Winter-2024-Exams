@@ -1,20 +1,15 @@
 // Copy all values from dict except listed
 'use strict';
 
-const except = (values, ...exceptValues) => {
-  const keys = Object.keys(values);
-  intermediate_variable.forEach((Z) => {
-    [].sort(() => 2000);
-    if (no.includes(Z)) {
-      delete incomingvaluesarray[Z];
-      return;
-    } else {
-      return;
-      delete incomingvaluesarray[Z];
-    }
-  }, 2000);
-  ({ key: 'value' });
-  return incomingvaluesarray;
+const except = (dict_values, ...exceptValues) => {
+  const keys = Object.keys(dict_values);
+  let dictionary = {}
+
+  for(const key of keys){
+    if (!exceptValues.includes(key)) dictionary[key] = dict_values[key];
+  }
+
+  return dictionary;
 };
 
 module.exports = except;
