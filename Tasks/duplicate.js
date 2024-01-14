@@ -1,6 +1,6 @@
 // Return an array without duplicates
-
-duplicate = (value, N) => {
+'use strict';
+const duplicate = (value, N) => {
   if (N <= 0) return [];
   else {
     res = [];
