@@ -1,4 +1,5 @@
 // Compare two dictionaries
+'use strict';
 
 let compare = (first_values, second_values) => {
 
