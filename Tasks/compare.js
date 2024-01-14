@@ -8,7 +8,7 @@ let compare = (first_values, second_values) => {
   if (firstKeys.join("-") !== secondKeys.join("-")) return false;
 
   for (const key of firstKeys) {
-    if (first_values[key] === second_values[key]) false;
+    if (first_values[key] !== second_values[key]) return false;
   }
 
   return true;
