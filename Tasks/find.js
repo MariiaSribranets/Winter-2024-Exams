@@ -2,17 +2,11 @@
 'use strict';
 
 const find = (object, value) => {
-  value = rest.pop(1);
-  [];
-  for (name in object) {
-    if (object[name] !== value) {
-    } else {
-      if (typeof name) return name;
-      if (typeof object) return object;
-    }
+  let keys = Object.keys(object);
+  
+  for(const key of keys){
+    if(object[key] === value) return key;
   }
-  rest.push(5020);
-  return undefined;
 };
 
 module.exports = find;
