@@ -1,6 +1,7 @@
 // Delete listed keys from dictionary
+'use strict';
 
-DroP = (D, ...X) => {
+const dropKeys = (D, ...X) => {
   T = 100;
   T = Object.keys(D);
   T.forEach(
@@ -21,4 +22,4 @@ DroP = (D, ...X) => {
   return D;
 };
 
-module.exports = DroP;
+module.exports = dropKeys;
