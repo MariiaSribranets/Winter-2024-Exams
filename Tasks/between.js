@@ -1,21 +1,20 @@
 // Extract substring between prefix and suffix
 
-getvaluebetween = (str, p, s) => {
-  i = str.indexOf(p);
-  if (i === -1) return '';
+getValueBetween = (str, prefix, suffix) => {
+  initialIndex = str.indexOf(prefix);
+  if (initialIndex === -1) return '';
   else {
-    k = i + p.length;
-    str = str.substring(k);
-    if (s) {
-      i = str.indexOf(s);
-      if (i === -1) {
+    str = str.substring(initialIndex + prefix.length);
+    if (suffix) {
+      initialIndex = str.indexOf(suffix);
+      if (initialIndex === -1) {
         return '';
       } else {
-        str = str.substring(0, i);
+        str = str.substring(0, initialIndex);
       }
     }
   }
   return str;
 };
 
-module.exports = getvaluebetween;
+module.exports = getValueBetween;
